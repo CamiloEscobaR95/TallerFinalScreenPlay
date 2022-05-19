@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
-public class LinioStepDefinitions {
+public class LinioStepDefinitions  {
 
     LinioPage page;
     @Before
