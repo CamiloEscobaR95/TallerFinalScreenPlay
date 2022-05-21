@@ -15,12 +15,13 @@ public class LinioStepDefinitions   {
 
     LinioPage page;
     @Before
-    public void setup(){
+    public void setUp(){
         OnStage.setTheStage(new OnlineCast());
+        OnStage.theActorCalled("Camilo");
     }
 
     @Given("^El usuario se encuentra en la aplicacion (.*)$")
-    public void elUsuarioSeEncuentraEnLaAplicacionHttpsWwwLinioComCo() {
+    public void elUsuarioSeEncuentraEnLaAplicacion(String url) {
         theActorCalled("Camilo").wasAbleTo(OpenBrowser.on(page));
     }
 
